@@ -1,0 +1,178 @@
+@CHARSET "ISO-8859-1";
+
+/* .app-map
+{
+	background-color:#666666;
+	position: fixed; 
+	
+	top: 0; 
+  	left: 0;
+  	
+	min-width: 100%;
+  	min-height: 100%;
+  	
+  	overflow:scroll;
+	
+} */
+
+
+#hall-floor
+{
+	background-image:url('../image/hall-floor.jpg');	 
+	position: fixed; 
+  /* 	top:8%;
+  	left:20%; */ 
+  	  	
+  	width: 70%;
+  	height: 80%;
+  	
+  	
+  	border:2px solid #a1a1a1;
+	padding:3px 10px; 	
+	border-radius:25px;
+	
+}
+
+
+.left-zone
+{
+	float:left;
+	width:75%;
+	height: 100%;
+	position: relative; 	
+	/* background-color:#CCFF66;   */
+}
+
+.right-zone
+{
+	float:right;
+	width:24%;
+	height: 90%;
+	margin-top:2%;
+	position: relative; 
+	background-color:#99CC99;  
+}
+ 
+
+.badminton-zone
+{
+	/* background-color:red; */
+	/* position: relative;  */
+	width:100%;
+	height:35%;
+	margin:5px;	
+}
+.badminton
+{	
+	float:left;
+	width: 32%;
+  	height: 150px;
+  	position:relative;
+	margin-left:10px;
+	margin-top:10px;	
+	
+}
+
+.badminton:hover
+{	
+	opacity:0.6;	
+	
+}
+
+
+.basketball-zone
+{	
+	/* background-color:green; */
+	/* position: relative;  */
+	width:100%;
+	height:35%;	
+	margin:5px;	
+}
+
+.basketball
+{	
+	float:left;
+	width: 32%;
+  	height: 150px;
+  	position:relative;
+	margin-left:10px;
+	margin-top:10px;	
+	
+}
+
+.basketball:hover
+{	
+	opacity:0.6;	
+	
+}
+
+
+.pingpong-zone
+{
+	/* background-color:yellow; */
+	position: relative; 
+	width:100%;;
+	height:26%;	
+	margin:5px;	
+	
+}
+
+
+.pingpong
+{
+	float:left;
+	width: 8%;
+  	height: 120px;
+  	position:relative;
+	margin-left:20px;
+	margin-top:3px;	
+	
+}
+ 
+ .pingpong:hover
+ {
+ 
+ opacity:0.6;	
+ 
+ }
+ 
+.tennis-zone
+{
+	/* background-color:black; */
+	position: relative; 
+	width:100%;;
+	height:100%;	
+}
+
+
+.tennis
+{	
+	/* background-color:yellow; */
+	position: relative; 
+	width:46%;
+	margin:5px;	
+	margin-top:15%;
+	float:left;		
+}
+ 
+.tennis:hover
+{
+	
+	opacity:0.6;	
+	
+}
+ .entrance
+ {
+ 	width:100px;
+ 	height:100px;
+ 	float:right;
+ 	margin-right:100px;
+ 	margin-top:2%; 
+ 	opacity:0.5;
+ }
+ 
+ .entrance:hover
+ {
+ 
+ opacity:1.0;
+ }

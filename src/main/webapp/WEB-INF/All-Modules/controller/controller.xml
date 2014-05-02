@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+<bean id="adminController" class="cloud.migration.controller.AdminController"> </bean>
+<bean id="capabilityController" class="cloud.migration.controller.CapabilityController"> </bean>
+<bean id="courtController" class="cloud.migration.controller.CourtController"> </bean>
+<bean id="hallController" class="cloud.migration.controller.HallController"> </bean>
+<bean id="reservationController" class="cloud.migration.controller.ReservationController"> </bean>
+<bean id="subscriberController" class="cloud.migration.controller.SubscriberController"> </bean>
+<bean id="timeIntervalController" class="cloud.migration.controller.TimeIntervalController"> </bean>
+
+
+<bean id="homeController" class="cloud.migration.frontend.controller.HomeController"> </bean>
+<bean id="timeIntervalController" class="cloud.migration.frontend.controller.MainController"> </bean>
+<bean id="testController" class="cloud.migration.frontend.controller.TestController"> </bean>
+
+
+</beans>

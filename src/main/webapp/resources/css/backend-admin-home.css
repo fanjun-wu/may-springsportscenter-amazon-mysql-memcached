@@ -1,0 +1,66 @@
+body {
+	font-family: Arial;
+	margin: 10px;
+}
+
+a {
+	color: #849585;
+	text-decoration: none;
+}
+
+a:HOVER {
+	color: #F42361;
+	text-decoration: underline;
+}
+
+h1 {
+	color: #849585;
+	border-bottom: black 3px dotted;
+	padding-top: 5px;
+}
+
+thead tr {
+	background-color: #849585;	
+	color: white;
+}
+
+.ruler {
+	color: #D33381;
+	border-bottom: black 3px dotted;
+	width: 100%;
+}
+
+.logoDiv {
+	width: 100%; 
+	float: left; 
+	clear: both;
+}
+
+.footer {
+	margin: 1em 0px;
+	width: 100%;
+	float:left;
+	clear: both;
+}
+
+.author {
+	float: right; 
+	font-size: x-small;
+}
+
+.applicationId {
+	float: left;
+	font-size: x-small;
+}
+
+table.hoverable th {
+	padding: 4px;
+}
+
+table.hoverable td {
+	padding: 4px;
+}
+ 
+.hoverable tr.highlight {
+  background-color: #D9E2A3;
+ }

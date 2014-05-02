@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-3.2.xsd">
+
+<!-- 
+<cache:annotation-driven/> 
+
+
+ <bean name="cacheManager" class="com.google.code.ssm.spring.SSMCacheManager">
+     <property name="caches">
+         <set>
+             <bean class="com.google.code.ssm.spring.SSMCache">
+                 <constructor-arg name="cache" index="0" ref="adminCache"/>
+                
+                 <constructor-arg name="expiration" index="1" value="50000"/>
+               
+                 <constructor-arg name="allowClear" index="2" value="false"/>
+             </bean>
+             
+             
+			<bean class="com.google.code.ssm.spring.SSMCache">
+                 <constructor-arg name="cache" index="0" ref="hallCache"/>
+                
+                 <constructor-arg name="expiration" index="1" value="50000"/>
+               
+                 <constructor-arg name="allowClear" index="2" value="false"/>
+             </bean>
+             
+             
+             <bean class="com.google.code.ssm.spring.SSMCache">
+                 <constructor-arg name="cache" index="0" ref="capabilityCache"/>
+                
+                 <constructor-arg name="expiration" index="1" value="50000"/>
+               
+                 <constructor-arg name="allowClear" index="2" value="false"/>
+             </bean>
+             
+             <bean class="com.google.code.ssm.spring.SSMCache">
+                 <constructor-arg name="cache" index="0" ref="courtCache"/>
+                
+                 <constructor-arg name="expiration" index="1" value="50000"/>
+               
+                 <constructor-arg name="allowClear" index="2" value="false"/>
+             </bean>
+             
+             
+             <bean class="com.google.code.ssm.spring.SSMCache">
+                 <constructor-arg name="cache" index="0" ref="reservationCache"/>
+                
+                 <constructor-arg name="expiration" index="1" value="50000"/>
+               
+                 <constructor-arg name="allowClear" index="2" value="false"/>
+             </bean>
+             
+             
+             <bean class="com.google.code.ssm.spring.SSMCache">
+                 <constructor-arg name="cache" index="0" ref="subscriberCache"/>
+                
+                 <constructor-arg name="expiration" index="1" value="50000"/>
+               
+                 <constructor-arg name="allowClear" index="2" value="false"/>
+             </bean>
+             
+             <bean class="com.google.code.ssm.spring.SSMCache">
+                 <constructor-arg name="cache" index="0" ref="timeIntervalCache"/>
+                
+                 <constructor-arg name="expiration" index="1" value="50000"/>
+               
+                 <constructor-arg name="allowClear" index="2" value="false"/>
+             </bean>
+                          
+             
+         </set>
+     </property>
+
+    </bean>
+
+<bean name="hallCache" class="com.google.code.ssm.CacheFactory">
+     <property name="cacheName" value="hallCache"/>
+      <property name="initializeTranscoders" value="false"></property> 
+     <property name="cacheClientFactory">
+        <bean name="cacheClientFactory" class="com.google.code.ssm.providers.xmemcached.MemcacheClientFactoryImpl"/>
+     </property>
+     <property name="addressProvider">
+         <bean class="com.google.code.ssm.config.DefaultAddressProvider">
+            <property name="address" value="springsportscenter.df9urs.cfg.use1.cache.amazonaws.com:11211"/>
+         </bean>
+     </property>
+     <property name="configuration">
+         <bean class="com.google.code.ssm.providers.CacheConfiguration">
+             <property name="consistentHashing" value="true"/>
+         </bean>
+     </property>
+ 
+</bean> 
+
+
+<bean name="capabilityCache" class="com.google.code.ssm.CacheFactory">
+     <property name="cacheName" value="capabilityCache"/>
+      <property name="initializeTranscoders" value="false"></property> 
+     <property name="cacheClientFactory">
+        <bean name="cacheClientFactory" class="com.google.code.ssm.providers.xmemcached.MemcacheClientFactoryImpl"/>
+     </property>
+     <property name="addressProvider">
+         <bean class="com.google.code.ssm.config.DefaultAddressProvider">
+            <property name="address" value="springsportscenter.df9urs.cfg.use1.cache.amazonaws.com:11211"/>
+         </bean>
+     </property>
+     <property name="configuration">
+         <bean class="com.google.code.ssm.providers.CacheConfiguration">
+             <property name="consistentHashing" value="true"/>
+         </bean>
+     </property>
+ 
+</bean> 
+
+
+
+<bean name="adminCache" class="com.google.code.ssm.CacheFactory">
+     <property name="cacheName" value="adminCache"/>
+      <property name="initializeTranscoders" value="false"></property> 
+     <property name="cacheClientFactory">
+        <bean name="cacheClientFactory" class="com.google.code.ssm.providers.xmemcached.MemcacheClientFactoryImpl"/>
+     </property>
+     <property name="addressProvider">
+         <bean class="com.google.code.ssm.config.DefaultAddressProvider">
+            <property name="address" value="springsportscenter.df9urs.cfg.use1.cache.amazonaws.com:11211"/>
+         </bean>
+     </property>
+     <property name="configuration">
+         <bean class="com.google.code.ssm.providers.CacheConfiguration">
+             <property name="consistentHashing" value="true"/>
+         </bean>
+     </property>
+ 
+</bean> 
+ 
+ 
+ <bean name="courtCache" class="com.google.code.ssm.CacheFactory">
+     <property name="cacheName" value="courtCache"/>
+      <property name="initializeTranscoders" value="false"></property> 
+     <property name="cacheClientFactory">
+        <bean name="cacheClientFactory" class="com.google.code.ssm.providers.xmemcached.MemcacheClientFactoryImpl"/>
+     </property>
+     <property name="addressProvider">
+         <bean class="com.google.code.ssm.config.DefaultAddressProvider">
+            <property name="address" value="springsportscenter.df9urs.cfg.use1.cache.amazonaws.com:11211"/>
+         </bean>
+     </property>
+     <property name="configuration">
+         <bean class="com.google.code.ssm.providers.CacheConfiguration">
+             <property name="consistentHashing" value="true"/>
+         </bean>
+     </property>
+ 
+</bean> 
+ 
+ 
+ <bean name="reservationCache" class="com.google.code.ssm.CacheFactory">
+     <property name="cacheName" value="reservationCache"/>
+      <property name="initializeTranscoders" value="false"></property> 
+     <property name="cacheClientFactory">
+        <bean name="cacheClientFactory" class="com.google.code.ssm.providers.xmemcached.MemcacheClientFactoryImpl"/>
+     </property>
+     <property name="addressProvider">
+         <bean class="com.google.code.ssm.config.DefaultAddressProvider">
+            <property name="address" value="springsportscenter.df9urs.cfg.use1.cache.amazonaws.com:11211"/>
+         </bean>
+     </property>
+     <property name="configuration">
+         <bean class="com.google.code.ssm.providers.CacheConfiguration">
+             <property name="consistentHashing" value="true"/>
+         </bean>
+     </property>
+ 
+</bean> 
+ 
+ 
+ <bean name="subscriberCache" class="com.google.code.ssm.CacheFactory">
+     <property name="cacheName" value="subscriberCache"/>
+      <property name="initializeTranscoders" value="false"></property> 
+     <property name="cacheClientFactory">
+        <bean name="cacheClientFactory" class="com.google.code.ssm.providers.xmemcached.MemcacheClientFactoryImpl"/>
+     </property>
+     <property name="addressProvider">
+         <bean class="com.google.code.ssm.config.DefaultAddressProvider">
+            <property name="address" value="springsportscenter.df9urs.cfg.use1.cache.amazonaws.com:11211"/>
+         </bean>
+     </property>
+     <property name="configuration">
+         <bean class="com.google.code.ssm.providers.CacheConfiguration">
+             <property name="consistentHashing" value="true"/>
+         </bean>
+     </property>
+ 
+</bean> 
+ 
+ 
+ <bean name="timeIntervalCache" class="com.google.code.ssm.CacheFactory">
+     <property name="cacheName" value="timeIntervalCache"/>
+      <property name="initializeTranscoders" value="false"></property> 
+     <property name="cacheClientFactory">
+        <bean name="cacheClientFactory" class="com.google.code.ssm.providers.xmemcached.MemcacheClientFactoryImpl"/>
+     </property>
+     <property name="addressProvider">
+         <bean class="com.google.code.ssm.config.DefaultAddressProvider">
+            <property name="address" value="springsportscenter.df9urs.cfg.use1.cache.amazonaws.com:11211"/>
+         </bean>
+     </property>
+     <property name="configuration">
+         <bean class="com.google.code.ssm.providers.CacheConfiguration">
+             <property name="consistentHashing" value="true"/>
+         </bean>
+     </property>
+ 
+</bean> 
+
+ -->
+
+</beans>

@@ -1,0 +1,169 @@
+@CHARSET "ISO-8859-1";
+
+.Header0
+{
+	position: fixed; 
+	font-size:30px;
+	color:red;
+	top:5px;
+	left:5%;	
+}
+.Header1
+{
+	position: fixed; 
+	font-size:20px;
+	color:red;
+	top:45px;
+	left:10%;	
+}
+.home-body
+{		
+	background-image:url('../image/home-city-21.jpg');	 
+	position: fixed; 
+  	top: 0; 
+  	left: 0; 
+  	min-width: 100%;
+  	min-height: 100%;
+}
+
+
+
+
+.app-map
+{
+	background-color:#666666;
+	position: fixed; 
+	
+	top: 0; 
+  	left: 0;
+  	
+	min-width: 100%;
+  	min-height: 100%;
+  	
+  	overflow:scroll;
+	
+}
+
+
+#hall-floor
+{
+	background-image:url('../image/hall-floor.jpg');	 
+	position: fixed; 
+  	top:2%;
+  	left:2%;
+  	width: 96%;
+  	height: 60%;
+	
+}
+
+
+.left-zone
+{
+	float:left;
+	width:75%;
+	height: 100%;
+	position: relative; 	
+	/* background-color:#CCFF66;   */
+}
+
+.right-zone
+{
+	float:right;
+	width:24%;
+	height: 100%;
+	position: relative; 
+	background-color:#99CC99;  
+}
+ 
+
+.badminton-zone
+{
+	/* background-color:red; */
+	position: relative; 
+	width:100%;
+	height:35%;
+	margin:5px;	
+}
+.badminton
+{	
+	float:left;
+	width: 350px;
+  	height: 150px;
+  	position:relative;
+	margin-left:10px;
+	margin-top:10px;	
+	
+}
+.basketball-zone
+{	
+	/* background-color:green; */
+	position: relative; 
+	width:100%;
+	height:35%;	
+	margin:5px;	
+}
+
+.basketball
+{	
+	float:left;
+	width: 350px;
+  	height: 150px;
+  	position:relative;
+	margin-left:10px;
+	margin-top:10px;	
+	
+}
+
+
+.pingpong-zone
+{
+	/* background-color:yellow; */
+	position: relative; 
+	width:100%;;
+	height:26%;	
+	margin:5px;	
+	
+}
+
+
+.pingpong
+{
+	float:left;
+	width: 80px;
+  	height: 120px;
+  	position:relative;
+	margin-left:20px;
+	margin-top:3px;	
+	
+}
+ 
+ 
+.tennis-zone
+{
+	/* background-color:black; */
+	position: relative; 
+	width:100%;;
+	height:100%;	
+}
+
+
+.tennis
+{	
+	/* background-color:yellow; */
+	position: relative; 
+	width:46%;
+	margin:5px;	
+	margin-top:20%;
+	float:left;		
+}
+ 
+ 
+ .entrance
+ {
+ 	width:100px;
+ 	height:100px;
+ 	float:right;
+ 	margin-right:100px;
+ 	margin-top:2%; 
+ }
+ 

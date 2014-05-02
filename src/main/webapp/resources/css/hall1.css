@@ -1,0 +1,158 @@
+@CHARSET "ISO-8859-1";
+
+.Header0
+{
+	position: fixed; 
+	font-size:30px;
+	color:red;
+	top:5px;
+	left:5%;	
+}
+.Header1
+{
+	position: fixed; 
+	font-size:20px;
+	color:red;
+	top:45px;
+	left:10%;	
+}
+.home-body
+{		
+	background-image:url('../image/home-city-21.jpg');	 
+	position: fixed; 
+  	top: 0; 
+  	left: 0; 
+  	min-width: 100%;
+  	min-height: 100%;
+}
+
+
+
+
+.app-map
+{
+	background-color:#666666;
+	position: fixed; 
+	
+	top: 0; 
+  	left: 0;
+  	
+	min-width: 100%;
+  	min-height: 100%;
+  	
+  	overflow:scroll;
+	
+}
+
+
+#hall-floor
+{
+	background-image:url('../image/hall-floor.jpg');	 
+	position: fixed; 
+  	top:2%;
+  	left:2%;
+  	width: 96%;
+  	height: 60%;
+	
+}
+
+/* 
+.left-zone
+{
+	width:70%;
+	height: 60%;
+	position: relative; 
+	background-color:#CCFF66;  light-green
+}
+
+.right-zone
+{
+	width:25%;
+	height: 60%;
+	position: relative; 
+	background-color:#FF99CC; pink	
+}
+ */
+
+.badminton-zone
+{
+	background-color:red;
+	position: relative; 
+	width:75%;;
+	height:35%;
+	margin:5px;	
+}
+.badminton
+{	
+	width: 350px;
+  	height: 150px;
+  	position:relative;
+	margin-left:10px;
+	margin-top:10px;	
+	float:left;
+}
+.basketball-zone
+{	
+	background-color:green;
+	position: relative; 
+	width:75%;;
+	height:35%;	
+	margin:5px;	
+}
+
+.basketball
+{	
+	width: 350px;
+  	height: 150px;
+  	position:relative;
+	margin-left:10px;
+	margin-top:10px;	
+	float:left;
+}
+
+
+.pingpong-zone
+{
+	background-color:yellow;
+	position: relative; 
+	width:75%;;
+	height:26%;	
+	margin:5px;	
+	
+}
+
+
+.pingpong
+{
+	
+	width: 80px;
+  	height: 120px;
+  	position:relative;
+	margin-left:20px;
+	margin-top:3px;	
+	float:left;
+}
+ 
+ /*
+.tennis-zone
+{
+	background-color:black;
+	position: relative; 
+	width:25%;;
+	height:100%;	
+	left:80%;
+	margin-top:30%;
+}
+
+
+.tennis
+{	
+	background-color:yellow;
+	position: relative; 
+	width:15%;;
+	height:60%;	
+	margin:5px;	
+	float:left;		
+}
+ 
+ */

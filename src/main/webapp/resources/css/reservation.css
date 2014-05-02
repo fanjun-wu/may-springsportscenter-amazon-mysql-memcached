@@ -1,0 +1,224 @@
+@CHARSET "ISO-8859-1";
+
+/* auto-complete css ??? */
+/* .ui-menu {
+        list-style:none;
+        padding: 2px;
+        margin: 0;
+        display:block;
+}
+.ui-menu .ui-menu {
+        margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+        margin:0;
+        padding: 0;
+        width: 100%;
+}
+.ui-menu .ui-menu-item a {
+        text-decoration:none;
+        display:block;
+        padding:.2em .4em;
+        line-height:1.5;
+        zoom:1;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+        margin: -1px;
+}
+ */
+
+
+
+
+/* 
+#reservation-body
+{
+	background-color:#666666;
+	position: fixed; 	
+	top: 0; 
+  	left: 0;  	
+	min-width: 100%;
+  	min-height: 100%;  	
+  	overflow:scroll;
+	
+} */
+
+
+.main-zone
+{
+	background-image:url('../image/hall-floor.jpg');	 
+	position: fixed; 
+  	
+  	/* top:8%;
+  	left:10%;
+ 	*/
+  	width: 70%;
+  	height: 80%;
+  	
+  	
+  	border:2px solid #a1a1a1;
+	padding:3px 10px; 	
+	border-radius:25px;
+	
+	
+}
+
+
+.left-zone
+{
+	
+	float:left;
+	width:45%;
+	height: 100%;
+	position: relative; 	
+	/* background-color:red;   */
+		
+}
+
+
+
+
+.sports-post
+{
+	
+	position:fixed;
+	margin-left:2%;
+	margin-top:5%;		
+	
+	border:2px solid #a1a1a1;
+	padding:3px 10px; 
+	background:#dddddd;
+	border-radius:25px;
+	
+	width:400px;
+	height:400px;
+	
+	
+}
+
+.right-zone
+{	
+	float:right;
+	width:40%;
+	height: 90%;
+	margin-top:2%;
+	margin-right:5%;
+	/* position: relative;  */
+	background-color:#6666CC;	
+	
+	
+	border:2px solid #a1a1a1;
+	padding:3px 10px; 	
+	border-radius:25px;
+	
+}
+
+
+
+#reservation-form
+{
+	
+	width:70%;
+	margin-left:10%;
+	margin-top:20%;	
+	height:340px;
+	border:2px solid #a1a1a1;
+	padding:3px 10px; 	
+	border-radius:25px;
+	background-color:white;
+	
+}
+
+.reservation-header
+{
+	position:fixed;
+	font-size:30px;
+	margin-left:7%;
+	color:white;
+	
+	
+}
+
+
+.form-field
+{
+	
+	/* font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; */
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight:bold;
+	
+	position:relative;
+	
+	left:25%;
+
+}
+
+
+
+#reserve-submit
+{	
+	position:relative;
+	top:1px;
+	right:-60px;
+}
+
+
+.about-background
+{
+	position:fixed;
+	margin-left:2%;
+	margin-top:5%;		
+	
+	width:60%;
+	height:40%;	
+	border:2px solid #a1a1a1;
+	padding:3px 10px; 	
+	border-radius:25px;
+	align:center;
+}
+
+
+
+/* the button is from "http://www.bestcssbuttongenerator.com/#/ukYbiQ48U3" */
+.myButton {
+	
+	-moz-box-shadow: 1px 2px 6px 1px #899599;
+	-webkit-box-shadow: 1px 2px 6px 1px #899599;
+	box-shadow: 1px 2px 6px 1px #899599;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+	background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+	background-color:#ededed;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:18px;
+	padding:9px 61px;
+	text-decoration:none;
+	text-shadow:-9px 0px 10px #e1e2ed;	
+	
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+	background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;	
+}

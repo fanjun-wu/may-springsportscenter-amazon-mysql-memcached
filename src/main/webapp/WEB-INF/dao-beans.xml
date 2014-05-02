@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<bean id="adminDaoImpl" class="cloud.migration.dao.impl.AdminDaoImp">
+	<property name="session" ref="sessionFactory"></property>
+ </bean>
+ 
+<bean id="capabilityDaoImpl" class="cloud.migration.dao.impl.CapabilityDaoImp">
+	<property name="session" ref="sessionFactory"></property>
+ </bean>
+<bean id="courtDaoImpl" class="cloud.migration.dao.impl.CourtDaoImp"> 
+	<property name="session" ref="sessionFactory"></property>
+</bean>
+<bean id="hallDaoImpl" class="cloud.migration.dao.impl.HallDaoImp"> 
+	<property name="session" ref="sessionFactory"></property>
+</bean>
+<bean id="reservationDaoImpl" class="cloud.migration.dao.impl.ReservationDaoImp"> 
+	<property name="session" ref="sessionFactory"></property>
+</bean>
+<bean id="subscriberDaoImpl" class="cloud.migration.dao.impl.SubscriberDaoImp">
+	<property name="session" ref="sessionFactory"></property>
+ </bean>
+<bean id="timeIntervalDaoImpl" class="cloud.migration.dao.impl.TimeIntervalDaoImp"> 
+	<property name="session" ref="sessionFactory"></property>
+</bean>
+
+
+
+
+
+</beans>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="adminController" class="cloud.migration.controller.AdminController">
+	<property name="adminService" ref="adminServiceImpl"></property>
+	<property name="session" ref="sessionFactory"></property>
+ </bean>
+<bean id="capabilityController" class="cloud.migration.controller.CapabilityController">
+	<property name="capabilityService" ref="capabilityServiceImpl"></property>
+	<property name="session" ref="sessionFactory"></property>
+ </bean>
+<bean id="courtController" class="cloud.migration.controller.CourtController">
+	<property name="courtService" ref="courtServiceImpl"></property>
+	<property name="session" ref="sessionFactory"></property>
+ </bean>
+<bean id="hallController" class="cloud.migration.controller.HallController"> 
+	<property name="hallService" ref="hallServiceImpl"></property>
+	<property name="session" ref="sessionFactory"></property>
+	<property name="courtService" ref="courtServiceImpl"></property>
+</bean>
+<bean id="reservationController" class="cloud.migration.controller.ReservationController">
+	<property name="reservationService" ref="reservationServiceImpl"></property>
+	<property name="session" ref="sessionFactory"></property>
+ </bean>
+<bean id="subscriberController" class="cloud.migration.controller.SubscriberController"> 
+	<property name="subscriberService" ref="subscriberServiceImpl"></property>
+	<property name="capabilityService" ref="capabilityServiceImpl"></property>
+	<property name="reservationService" ref="reservationServiceImpl"></property>
+	<property name="timeIntervalService" ref="timeIntervalServiceImpl"></property>
+	<property name="session" ref="sessionFactory"></property>		
+</bean>
+<bean id="timeIntervalController" class="cloud.migration.controller.TimeIntervalController">
+	<property name="timeIntervalService" ref="timeIntervalServiceImpl"></property>
+	<property name="session" ref="sessionFactory"></property>
+ </bean>
+
+
+<bean id="homeController" class="cloud.migration.frontend.controller.HomeController"> 
+	<property name="subscriberService" ref="subscriberServiceImpl"></property>
+	<property name="capabilityService" ref="capabilityServiceImpl"></property>
+	<property name="reservationService" ref="reservationServiceImpl"></property>
+	<property name="timeIntervalService" ref="timeIntervalServiceImpl"></property>
+	<property name="adminService" ref="adminServiceImpl"></property>
+	<property name="courtService" ref="courtServiceImpl"></property>
+	<property name="hallService" ref="hallServiceImpl"></property>
+	
+
+</bean>
+<bean id="mainController" class="cloud.migration.frontend.controller.MainController">
+	<property name="subscriberService" ref="subscriberServiceImpl"></property>
+	<property name="capabilityService" ref="capabilityServiceImpl"></property>
+	<property name="reservationService" ref="reservationServiceImpl"></property>
+	<property name="timeIntervalService" ref="timeIntervalServiceImpl"></property>
+	<property name="adminService" ref="adminServiceImpl"></property>
+	<property name="courtService" ref="courtServiceImpl"></property>
+	<property name="hallService" ref="hallServiceImpl"></property>
+	<property name="session" ref="sessionFactory"></property>
+
+ </bean>
+
+
+<bean id="testController" class="cloud.migration.frontend.controller.TestController"> 
+		<property name="subscriberService" ref="subscriberServiceImpl"></property>
+	<property name="capabilityService" ref="capabilityServiceImpl"></property>
+	<property name="reservationService" ref="reservationServiceImpl"></property>
+	<property name="timeIntervalService" ref="timeIntervalServiceImpl"></property>
+	<property name="adminService" ref="adminServiceImpl"></property>
+	<property name="courtService" ref="courtServiceImpl"></property>
+	<property name="hallService" ref="hallServiceImpl"></property>
+	<property name="session" ref="sessionFactory"></property>	
+</bean>
+
+
+
+
+
+
+</beans>

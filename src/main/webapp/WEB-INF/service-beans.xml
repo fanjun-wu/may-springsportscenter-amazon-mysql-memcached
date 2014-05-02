@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="adminServiceImpl" class="cloud.migration.service.impl.AdminServiceImpl">
+	<property name="adminDao" ref="adminDaoImpl"></property>
+ </bean>
+<bean id="capabilityServiceImpl" class="cloud.migration.service.impl.CapabilityServiceImpl"> 
+	<property name="capabilityDao" ref="capabilityDaoImpl"></property>
+</bean>
+
+<bean id="courtServiceImpl" class="cloud.migration.service.impl.CourtServiceImpl"> 
+	<property name="courtDao" ref="courtDaoImpl"></property>
+</bean>
+
+<bean id="hallServiceImpl" class="cloud.migration.service.impl.HallServiceImpl"> 
+	<property name="hallDao" ref="hallDaoImpl"></property>
+</bean>
+<bean id="reservationServiceImpl" class="cloud.migration.service.impl.ReservationServiceImpl">
+	<property name="reservationDao" ref="reservationDaoImpl"></property>
+ </bean>
+<bean id="subscriberServiceImpl" class="cloud.migration.service.impl.SubscriberServiceImpl"> 
+	<property name="subscriberDao" ref="subscriberDaoImpl"></property>
+</bean>
+<bean id="timeIntervalServiceImpl" class="cloud.migration.service.impl.TimeIntervalServiceImpl"> 
+	<property name="timeIntervalDao" ref="timeIntervalDaoImpl"></property>
+</bean>
+
+
+
+
+
+
+
+</beans>

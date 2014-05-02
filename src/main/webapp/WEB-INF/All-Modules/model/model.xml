@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="admin" class="cloud.migration.model.Admin"> </bean>
+<bean id="capability" class="cloud.migration.model.Capability"> </bean>
+<bean id="court" class="cloud.migration.model.Court"> </bean>
+<bean id="hall" class="cloud.migration.model.Hall"> </bean>
+<bean id="person" class="cloud.migration.model.Person"> </bean>
+<bean id="reservation" class="cloud.migration.model.Reservation"> </bean>
+<bean id="subscriber" class="cloud.migration.model.Subscriber"> </bean>
+<bean id="timeInterval" class="cloud.migration.model.TimeInterval"> </bean>
+
+
+</beans>
